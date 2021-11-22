@@ -24,12 +24,12 @@ const Header = () => {
     // </Navbar>
     <Navbar bg="light" variant='light' expand="lg">
         <Container>
-        <Navbar.Brand href="paint-app/">Landing Page</Navbar.Brand>
+        <Navbar.Brand href="/">Landing Page</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
-            <Nav.Link href="paint-app/">Home</Nav.Link>
-            <Nav.Link href="paint-app/paint">Paint and Play</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/paint">Paint and Play</Nav.Link>
         </Nav>
         </Navbar.Collapse>
         </Container>
