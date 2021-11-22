@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import logo from './logo.svg';
+import Menu from './components/Menu'
 import './App.css';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     // set canvas variable equal to current value of convasRef which is null
     const canvas = canvasRef.current
-    // htmlcanvasElement.getContext() method returns a drawing context on the canvas. `2d` represents a two dimensional rendering context
+    // htmlcanvasElement.getContext() method returns a drawing context on the canvas. `2d` represents a two dimensional rendering context. Variable ctx instead of 'context'
     const ctx = canvas.getContext('2d')
     // CanvasRenderingContext2D.lineCap property of Canvas 2D api determines the shape used to draw the end points of lines
     ctx.lineCap = 'round'
@@ -53,6 +53,7 @@ function App() {
 
   // function for actively drawing
   const draw = (event) => {
+    // work clause to reduce nesting. If not drawing then return
     if (!isDrawing) {
       return
     }
