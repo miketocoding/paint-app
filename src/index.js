@@ -15,7 +15,7 @@ ReactDOM.render(
       <Header />
       <Routes>
         <Route exact path='paint-app/' element={<Landing />} />
-        <Route exact path='paint-app/paint' element={<App />} />
+        <Route exact path='paint-app/paint/' element={<App />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
