@@ -6,14 +6,18 @@ function App() {
   const canvasRef = useRef(null)
   const ctxRef = useRef(null)
   const [isDrawing, setIsDrawing] = useState(false)
-  const [lineWidth, setLineWidth] = useState(5)
   const [lineColor, setLineColor] = useState('black')
+  const [lineWidth, setLineWidth] = useState(5)
   const [lineOpacity, setLineOpacity] = useState(0.1)
 
   // initialization when component mounds for the first time
   useEffect(() => {
     // set canvas variable equal to current value of convasRef which is null
     const canvas = canvasRef.current
+    // canvas.width = window.innerWidth * 2
+    // canvas.height = window.innerHeight * 2
+    // canvas.style.width = `${window.innerWidth}px`
+    // canvas.style.height = `${window.innerHeight}px`
     // htmlcanvasElement.getContext() method returns a drawing context on the canvas. `2d` represents a two dimensional rendering context. Variable ctx instead of 'context'
     const ctx = canvas.getContext('2d')
     // CanvasRenderingContext2D.lineCap property of Canvas 2D api determines the shape used to draw the end points of lines
@@ -23,7 +27,7 @@ function App() {
     // specifies the aplha(transparency) value applied to shapes and images drawn onto canvas
     ctx.globalAlpha = lineOpacity
     // specifies color, gradient, or pattern to use for the strokes(outlines) around shapes. Default is #000 black
-    ctx.strokestyle = lineColor
+    ctx.strokeStyle = lineColor
     // sets the thickness of lines
     ctx.lineWidth = lineWidth
     // set ctxRef current to ctx
@@ -67,15 +71,19 @@ function App() {
   return (
     <div className="App">
       <h1>Paint App</h1>
-      <div classname="draw-area">
-        {/* <Menu /> */}
+      <div className="draw-area">
+        <Menu
+          setLineColor={setLineColor}
+          setLineWidth={setLineWidth}
+          setLineOpacity={setLineOpacity}
+        />
         <canvas
           onMouseDown={startDrawing}
           onMouseUp={endDrawing}
           onMouseMove={draw}
           ref={canvasRef}
-          width={`1280px`}
-          height={`720px`}
+          width={`852px`}
+          height={`480px`}
         />
       </div>
     </div>

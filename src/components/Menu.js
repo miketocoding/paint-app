@@ -1,12 +1,12 @@
 import React from 'react'
 import './../App.css'
 
-const Menu = ({ setLineColor, setLineWidth, setLineOpacity}) => {
+const Menu = ({ setLineColor, setLineWidth, setLineOpacity }) => {
     return (
         <div className="Menu">
             <label>Brush Color</label>
             <input
-                type = 'color'
+                type='color'
                 onChange={(event) => {
                     setLineColor(event.target.value)
                 }}
