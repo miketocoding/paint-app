@@ -14,8 +14,8 @@ ReactDOM.render(
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route exact path='/' element={<Landing />} />
-        <Route exact path='/paint' element={<App />} />
+        <Route exact path='paint-app/' element={<Landing />} />
+        <Route exact path='paint-app/paint' element={<App />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
