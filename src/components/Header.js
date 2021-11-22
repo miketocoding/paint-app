@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import Nav from 'react-bootstrap/nav'
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     return (
@@ -28,8 +29,8 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
-            <Nav.Link href="/paint-app/">Home</Nav.Link>
-            <Nav.Link href="/paint-app/paint/">Paint and Play</Nav.Link>
+            <Nav.Link><Link to="/">Home</Link></Nav.Link>
+            <Nav.Link><Link to="/paint/">Paint and Play</Link></Nav.Link>
         </Nav>
         </Navbar.Collapse>
         </Container>

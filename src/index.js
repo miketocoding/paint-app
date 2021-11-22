@@ -11,11 +11,11 @@ import Header from './components/Header'
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/paint-app'>
       <Header />
       <Routes>
-        <Route exact path='paint-app/' element={<Landing />} />
-        <Route exact path='paint-app/paint/' element={<App />} />
+        <Route exact path='/' element={<Landing />} />
+        <Route exact path='/paint/' element={<App />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
