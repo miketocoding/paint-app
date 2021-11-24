@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Menu from './components/Menu'
 import './App.css';
+import context from 'react-bootstrap/esm/AccordionContext';
 
 function App() {
   const canvasRef = useRef(null)
@@ -18,8 +19,16 @@ function App() {
     // canvas.height = window.innerHeight * 2
     // canvas.style.width = `${window.innerWidth}px`
     // canvas.style.height = `${window.innerHeight}px`
+
     // htmlcanvasElement.getContext() method returns a drawing context on the canvas. `2d` represents a two dimensional rendering context. Variable ctx instead of 'context'
     const ctx = canvas.getContext('2d')
+
+    // Make the canvas container white
+    // ctx.fillStyle = "white"
+    // draws a rectangle (fill it with fill color already set)
+    // 0,0 is position and size is size of canvas
+    // ctx.fillRect(0,0,canvas.width,canvas.height)
+
     // CanvasRenderingContext2D.lineCap property of Canvas 2D api determines the shape used to draw the end points of lines
     ctx.lineCap = 'round'
     // determins the shape used to join two line segments where they meet

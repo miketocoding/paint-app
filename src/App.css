@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
 
 .App {
   width: 100%;
@@ -14,19 +14,16 @@
 }
 
 h1 {
-  font-family: 'Lobster', cursive;
+  font-family: 'Arvo', serif;
   font-size: 50px;
   color: #4644f0;
 }
 
-.draw-area {
-  width: 852px;
-  height: 480px;
-  /* border: 2px solid #c40e0e; */
-  border-width: 10px;
+/* put border on the canvas */
+canvas {
+  border-color: #a3a3a3;
   border-style: solid;
-  border-color: #808080;
-  position: relative;
+  border-width: 5px;
   background-color: white;
 }
 
@@ -37,7 +34,7 @@ h1 {
   justify-content: space-evenly;
   border-radius: 5px;
   align-items: center;
-  background-color: #a3a3a3;
+  background-color: #d2f4f1;
   margin: auto;
   margin-top: 10px;
 }
