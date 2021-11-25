@@ -25,12 +25,12 @@ const Header = () => {
     // </Navbar>
     <Navbar variant='dark' expand="lg" className="navigation shadow sticky-top">
         <Container>
-        <Navbar.Brand href="/paint-app/">Paint Your Soul</Navbar.Brand>
+        <Navbar.Brand href="/paint-app/" className='fs-2 fw-bold'>Paint Your Soul</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
-            <Nav.Link><Link to="/" className="text-reset text-decoration-none">Home</Link></Nav.Link>
-            <Nav.Link><Link to="/paint/" className="text-reset text-decoration-none">Paint It Out!</Link></Nav.Link>
+            <Nav.Link><Link to="/" className="text-reset text-decoration-none fs-5 fw-bold">Home</Link></Nav.Link>
+            <Nav.Link><Link to="/paint/" className="text-reset text-decoration-none fs-5 fw-bold">Paint It Out!</Link></Nav.Link>
         </Nav>
         </Navbar.Collapse>
         </Container>
