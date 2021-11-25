@@ -23,7 +23,7 @@ const Header = () => {
     //         </Nav>
     //     </Navbar.Collapse>
     // </Navbar>
-    <Navbar bg="light" variant='light' expand="lg" className="navigation shadow sticky-top">
+    <Navbar variant='dark' expand="lg" className="navigation shadow sticky-top">
         <Container>
         <Navbar.Brand href="/paint-app/">Paint Your Soul</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
