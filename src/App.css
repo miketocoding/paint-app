@@ -69,7 +69,9 @@ canvas {
   display: flex;
   flex-wrap: wrap;
   padding: 25px 0;
-  justify-content: space-between;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .introText {
