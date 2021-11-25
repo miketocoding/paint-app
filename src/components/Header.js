@@ -23,14 +23,14 @@ const Header = () => {
     //         </Nav>
     //     </Navbar.Collapse>
     // </Navbar>
-    <Navbar bg="light" variant='light' expand="lg" className="shadow-sm">
+    <Navbar bg="light" variant='light' expand="lg" className="navigation shadow sticky-top">
         <Container>
-        <Navbar.Brand href="/paint-app/">Landing Page</Navbar.Brand>
+        <Navbar.Brand href="/paint-app/">Paint Your Soul</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="me-auto">
-            <Nav.Link><Link to="/">Home</Link></Nav.Link>
-            <Nav.Link><Link to="/paint/">Paint and Play</Link></Nav.Link>
+        <Nav className="ml-auto">
+            <Nav.Link><Link to="/" className="text-reset text-decoration-none">Home</Link></Nav.Link>
+            <Nav.Link><Link to="/paint/" className="text-reset text-decoration-none">Paint It Out!</Link></Nav.Link>
         </Nav>
         </Navbar.Collapse>
         </Container>

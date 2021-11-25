@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 .App {
   width: 100%;
@@ -13,10 +14,34 @@
             linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
 }
 
+.landing-container {
+  min-height: calc(100vh - 190px);
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0px 50px;
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 1200px;
+  /* width: 90%; */
+  margin: 0, auto;
+
+}
+
+.navigation {
+  padding: .8rem;
+}
+
+body {
+  background-color: #f2cc8f;
+  font-family: 'Montserrat', sans-serif;
+  color: #3d405b;
+}
+
 h1 {
   font-family: 'Arvo', serif;
   font-size: 50px;
-  color: #4644f0;
 }
 
 /* put border on the canvas */
@@ -37,4 +62,48 @@ canvas {
   background-color: #d2f4f1;
   margin: auto;
   margin-top: 10px;
+}
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px 0;
+  justify-content: space-between;
+}
+
+.introText {
+  padding-right: 5px;
+  flex-basis: 50%;
+}
+
+.introImg {
+  flex-basis: 50%;
+  padding-left: 5px;
+  display: block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px 20px;
+}
+
+li {
+  padding: 3px 0px;
+}
+
+.engineers {
+  box-shadow: 0 3px 15px rgb(0 0 0 / 20%);
+  background-color: #81b29a;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+img {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
